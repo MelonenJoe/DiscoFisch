@@ -24,9 +24,8 @@ public class DiscoFishListener implements Listener {
     public void onPlayerBucketEmpty(PlayerBucketEmptyEvent event) {
 
         Player player = event.getPlayer();
-
-        // This is a little bit critical because in the offhand and when you are fast enough to swap items, it doesn't work
-        ItemStack bucket = event.getPlayer().getInventory().getItem(event.getHand());
+        
+        ItemStack bucket = player.getInventory().getItem(event.getHand());
 
         BlockFace blockFace = event.getBlockFace();
 
