@@ -1,0 +1,8 @@
+name: DiscoFisch
+version: '${project.version}'
+main: net.melonenjoe.discofisch.Main
+api-version: '1.20'
+
+commands:
+  discofisch:
+    description: "Gives you an Item to summon an Disco Fish!"
